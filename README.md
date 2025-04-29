@@ -3,7 +3,7 @@
 
 ## Overview
 
-This repository contains the code and data used in the study "*RadarGaugeNet: Radar-Rain-Gauge based AI Architecture for Real-time Quantitative Precipitation Estimation,"* which introduces a deep learning approach for accurate, real-time Quantitative Precipitation Estimation (QPE). The project addresses challenges in precipitation measurement caused by radar biases and interpolation artifacts by developing RadarGaugeNet — a U-Net-based model supervised solely by rain gauge observations. 
+This repository contains the code and data used in the study "*RadarGaugeNet: Radar-Rain-Gauge based AI Architecture for Real-time Quantitative Precipitation Estimation,"* which introduces a deep learning approach for accurate, real-time Quantitative Precipitation Estimation (QPE). The project addresses challenges in precipitation measurement caused by radar biases and interpolation artifacts by developing RadarGaugeNet - a U-Net-based model supervised solely by rain gauge observations. 
 ## Authors
 - **Ron Sarafian** - Earth and Planetary Science Department, Weizmann Institute of Science, Israel
 - **Meira Barron** - Department of Statistics and Data Science, Hebrew University of Jerusalem, Israel
@@ -38,7 +38,7 @@ The study relies on the following datasets:
 3. **ERA5-Land Reanalysis**: Hourly total precipitation estimates from the ERA5-Land dataset by the European Centre for Medium-Range Weather Forecasts (ECMWF), at approximately 9 km spatial resolution.
 the study area experiences a Mediterranean climate characterized by wet winters and dry summers. A diverse topography, including mountains, coastal plains, and deserts, creates variable rainfall patterns. The image below shows the region where the model was trained and tested:
 
-<img src="images/study_domain.png" alt="Training and Testing Regions" width="400"/>
+<img src="images/study_domain.png" alt="Training and Testing Regions" width="800"/>
 
 
 
@@ -60,9 +60,9 @@ and F1 score
 The nowcasting model was evaluated using RMSE for continuous rainfall estimation, and precision, recall, F1 score, and accuracy for binary classification of rain events.
 
 ## Results
-- ** Estimation Effectiveness**: RadarGaugeNet reduced average RMSE to 0.62 mm/h compared to 0.76 mm/h for the IMS radar, consistently improving the accuracy of continuous rainfall estimation across all stations.
-- ** Detection Improvement**: RadarGaugeNet consistently outperformed both IMS radar and ERA5-Land reanalysis in binary rain event detection across all regions, with particularly strong Improvement in the northern region, where it achieved F1 scores more than 10 percentage points higher than the IMS radar.
-- ** Coverage Refinement**: RadarGaugeNet successfully reconstructed rainfall fields in regions where radar performance degraded, such as the Upper Galilee, Golan Heights, and southern deserts, demonstrating robust inference beyond radar range.
+- **Estimation Effectiveness**: RadarGaugeNet reduced average RMSE to 0.62 mm/h compared to 0.76 mm/h for the IMS radar, consistently improving the accuracy of continuous rainfall estimation across all stations.
+- **Detection Improvement**: RadarGaugeNet consistently outperformed both IMS radar and ERA5-Land reanalysis in binary rain event detection across all regions, with particularly strong Improvement in the northern region, where it achieved F1 scores more than 10 percentage points higher than the IMS radar.
+- **Coverage Refinement**: RadarGaugeNet successfully reconstructed rainfall fields in regions where radar performance degraded, such as the Upper Galilee, Golan Heights, and southern deserts, demonstrating robust inference beyond radar range.
 RadarGaugeNet significantly reduces rainfall estimation error compared to IMS radar. The following images compare radar observations, ground truth rain gauge data, and RadarGaugeNet reconstructions across test examples:
 <img src="images/recon_examples_2.jpeg" alt="Radar vs Rain Gauge vs RadarGaugeNet" width="800"/>
 
