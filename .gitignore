@@ -1,0 +1,31 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Big data files
+*.csv
+*.npz
+*.npy
+*.h5
+*.pt
+*.ckpt
+
+# Large directories (examples)
+notebooks/
+utils/
+trained_models/
+RadarGuageNet_data/
+new_examples_190325/
+new_examples_170325/
+new_examples/
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+
+# Hidden files
+.DS_Store
