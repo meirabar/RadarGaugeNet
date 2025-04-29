@@ -33,9 +33,9 @@ Accurate, real-time Quantitative Precipitation Estimation (QPE) is critical for 
 
 The study relies on the following datasets:
 
-1. ** Rain Gauge Measurements**: In-situ rainfall data from 80 automated meteorological stations across Israel, collected at 10-minute intervals and aggregated to 1-hour blocks, covering 2010-2020. 
-2. ** INCA Rain Radar-Gauge**: High-resolution precipitation estimates from the Integrated Nowcasting through Comprehensive Analysis (INCA) system operated by the Israel Meteorological Service (IMS). 
-3. ** ERA5-Land Reanalysis**: Hourly total precipitation estimates from the ERA5-Land dataset by the European Centre for Medium-Range Weather Forecasts (ECMWF), at approximately 9 km spatial resolution.
+1. **Rain Gauge Measurements**: In-situ rainfall data from 80 automated meteorological stations across Israel, collected at 10-minute intervals and aggregated to 1-hour blocks, covering 2010-2020. 
+2. **INCA Rain Radar-Gauge**: High-resolution precipitation estimates from the Integrated Nowcasting through Comprehensive Analysis (INCA) system operated by the Israel Meteorological Service (IMS). 
+3. **ERA5-Land Reanalysis**: Hourly total precipitation estimates from the ERA5-Land dataset by the European Centre for Medium-Range Weather Forecasts (ECMWF), at approximately 9 km spatial resolution.
 the study area experiences a Mediterranean climate characterized by wet winters and dry summers. A diverse topography, including mountains, coastal plains, and deserts, creates variable rainfall patterns. The image below shows the region where the model was trained and tested:
 
 <img src="images/study_domain.png" alt="Training and Testing Regions" width="400"/>
@@ -44,7 +44,9 @@ the study area experiences a Mediterranean climate characterized by wet winters 
 
 ## Methodology
 RadarGaugeNet’s training scheme and architecture are shown in the diagram below:
-![Model Flow](images/ architecture_no_attention.png)
+
+![Model Flow](images/architecture_no_attention.png)
+
 The workflow consists of two main stages:
 
 ### Training Framework
@@ -68,14 +70,10 @@ RadarGaugeNet significantly reduces rainfall estimation error compared to IMS ra
 
 All data used in this study is publicly accessible:
 
-- **IMS Radar **: [https://ims.gov.il/he/RadarSatellite]( https://ims.gov.il/he/RadarSatellite)
-- **IMS In-Situ Stations **:[https://ims.gov.il/he/AccumulatedRain]( https://ims.gov.il/he/AccumulatedRain)
-- **INCA **: [https://ims.gov.il/en/INCA]( https://ims.gov.il/en/INCA)
-- **ERA5-Land Reanalysis**: [https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels?tab=overview](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land?tab=overview)
-
-https://ims.gov.il/he/RadarSatellite
-לתחנות https://ims.gov.il/he/AccumulatedRain
-INCA https://ims.gov.il/he/INCA
+- **IMS Radar**:[https://ims.gov.il/he/RadarSatellite]( https://ims.gov.il/he/RadarSatellite)
+- **IMS In-Situ Stations**:[https://ims.gov.il/he/AccumulatedRain]( https://ims.gov.il/he/AccumulatedRain)
+- **INCA**:[https://ims.gov.il/en/INCA]( https://ims.gov.il/en/INCA)
+- **ERA5-Land Reanalysis**:[https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels?tab=overview](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land?tab=overview)
 
 ---
 
