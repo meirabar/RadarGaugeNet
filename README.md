@@ -63,7 +63,9 @@ The nowcasting model was evaluated using RMSE for continuous rainfall estimation
 - **Estimation Effectiveness**: RadarGaugeNet reduced average RMSE to 0.62 mm/h compared to 0.76 mm/h for the IMS radar, consistently improving the accuracy of continuous rainfall estimation across all stations.
 - **Detection Improvement**: RadarGaugeNet consistently outperformed both IMS radar and ERA5-Land reanalysis in binary rain event detection across all regions, with particularly strong Improvement in the northern region, where it achieved F1 scores more than 10 percentage points higher than the IMS radar.
 - **Coverage Refinement**: RadarGaugeNet successfully reconstructed rainfall fields in regions where radar performance degraded, such as the Upper Galilee, Golan Heights, and southern deserts, demonstrating robust inference beyond radar range.
-RadarGaugeNet significantly reduces rainfall estimation error compared to IMS radar. The following images compare radar observations, ground truth rain gauge data, and RadarGaugeNet reconstructions across test examples:
+RadarGaugeNet significantly reduces rainfall estimation error compared to IMS radar.
+
+The following images compare radar observations, ground truth rain gauge data, and RadarGaugeNet reconstructions across test examples:
 <img src="images/recon_examples_2.jpeg" alt="Radar vs Rain Gauge vs RadarGaugeNet" width="800"/>
 
 ## Data Availability
