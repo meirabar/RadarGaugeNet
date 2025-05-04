@@ -45,7 +45,7 @@ the study area experiences a Mediterranean climate characterized by wet winters 
 ## Methodology
 RadarGaugeNet’s training scheme and architecture are shown in the diagram below:
 
-![Model Flow](images/architecture_no_attention.png)
+![Model Flow](images/architecture.png)
 
 The workflow consists of two main stages:
 
