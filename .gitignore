@@ -13,14 +13,16 @@ __pycache__/
 *.pt
 *.ckpt
 
-# Large directories (examples)
+# Large directories
+train/
+metrics/
+dataset/
 notebooks/
 utils/
-trained_models/
+images/
 RadarGuageNet_data/
-new_examples_190325/
-new_examples_170325/
-new_examples/
+trained_models/
+new_examples*/
 
 # Temporary files
 *.log
